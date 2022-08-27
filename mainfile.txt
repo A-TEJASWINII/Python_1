@@ -1,6 +1,194 @@
-import mymodule
-mymodule.a("tom","good evening")
+list1=[1,"code",3,4]
+list2=[5,6,7,"python"]
+print(list1)
+print(list2)
+result1=list1<=list2
+print(result1)
+result2=list1>=list2
+print(result2)
+result3=list1==list2
+print(result3)
+result4=list1!=list2
+print(result4)
 
-import datetime
-x=datetime.datetime.now()
-print(x.month)
+output:
+
+[1, 'code', 3, 4]
+[5, 6, 7, 'python']
+True
+False
+False
+True
+
+tuple1=("oppo","vivo",351,"samsung")
+tuple2=("potter",464,"ron","hermione")
+print(tuple1)
+print(tuple2)
+res1=tuple1>=tuple2
+print(res1)
+res2=tuple1<=tuple2
+print(res2)
+res3=tuple1==tuple2
+print(res3)
+res4=tuple1!=tuple2
+print(res4)
+
+output:
+
+('oppo', 'vivo', 351, 'samsung')
+('potter', 464, 'ron', 'hermione')
+False
+True
+False
+True
+
+set1={5384,"union","intersection","data"}
+set2={"data",890,"union",768}
+print(set1)
+print(set2)
+set3=set1|set2
+set4=set1&set2
+print(set3)
+print(set4)
+r1=set1<=set2
+r2=set1>=set2
+r3=set1==set2
+r4=set1!=set2
+print(r1)
+print(r2)
+print(r3)
+print(r4)
+
+output:
+
+{5384, 'data', 'union', 'intersection'}
+{768, 'data', 890, 'union'}
+{768, 'intersection', 5384, 'data', 890, 'union'}
+{'data', 'union'}
+False
+False
+False
+True
+
+dict1={"brand":"lenovo","color":"white","model":2022}
+dict2={"brand":"hp","color":"grey","model":2020}
+print(dict1)
+print(dict2)
+dict1!=dict2
+
+output:
+
+{'brand': 'lenovo', 'color': 'white', 'model': 2022}
+{'brand': 'hp', 'color': 'grey', 'model': 2020}
+True
+
+                                                                     ASSIGNMENT-2
+                                                                  
+x=int(input("enter the first value:"))
+y=int(input("enter the second value:"))
+z=(input("enter the operation to be performed:"))
+if z == 'sum' :
+     print("the sum of two numbers is",(x+y))
+elif z == 'subtraction' :     
+     print("the difference of two numbers is",(x-y))
+if z == 'multiplication' :
+     print("the product of two numbers is",(x*y))
+if z=='division':
+     print("the division of two numbers is",(x/y))
+else:
+     print("invalid choice")      
+
+Output:
+
+enter the first value:9
+enter the second value:6
+enter the operation to be performed:division
+the division of two numbers is 1.5
+
+                                                                      ASSIGNMENT-3
+                                                                      
+myfile=open("file.txt","w+")
+myfile.write("this is written by the user")
+
+OUTPUT:
+27
+
+myfile=open("file.txt","a+")
+myfile.write("\n this is written by the programmer")
+
+OUTPUT:
+35
+
+myfile=open("file.txt","r+")
+print(myfile.read())
+
+OUTPUT:
+
+this is written by the user
+ this is written by the programmer
+ 
+ myfile.close()
+ 
+ myfile=open("file.txt","r")
+print(myfile.read())
+
+output:
+
+this is written by the user
+ this is written by the programmer
+ 
+                                                                   ASSIGNMENT-4
+                                                                   
+x=[455,464,53,678,757,945,875]
+x.sort()
+print("list in ascending order: ",x)
+
+x.sort(reverse=True)
+print('List in Descending Order: ',x)                                                                  
+ 
+ 
+OUTPUT :
+
+list in ascending order:  [53, 455, 464, 678, 757, 875, 945]
+List in Descending Order:  [945, 875, 757, 678, 464, 455, 53]
+
+
+                                                                 ASSIGNMENT-5
+                                                                 
+def data(student,*a,**b):
+  print(student)
+  
+  for rollno in a:
+   print(rollno)
+  for subject in b:
+    print(subject,b[subject]) 
+data("alice",4,6,12,42,java=92,sql=75)
+
+OUTPUT:
+
+alice
+4
+6
+12
+42
+java 92
+sql 75
+
+                                                                 ASSIGNMENT-6
+                                                                 
+tables=(lambda x=x:x*2 for x in range(1,11))
+for y in tables:
+  print(y())
+  
+OUTPUT:
+
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
